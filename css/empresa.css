@@ -1,0 +1,169 @@
+
+body{
+    background-image: url("../images/plantacao_empresa2.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* ------------------- Área do cabeçalho ---------------------- */
+
+#caixa_cabecalho.empresa{
+    background-color: #ffffff;
+    border: none;  
+    margin-bottom: 80px;
+}
+
+#area_menu_empresa{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    height: 120px;
+    transition: all 2s;
+}
+
+#caixa_cabecalho.fixo #area_menu_empresa{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    height: 140px;
+    transition: all 2s;
+}
+
+.linha_frm_login input:focus{
+    border: 2px solid rgb(236, 157, 16);
+}
+
+
+
+/*------------ Estilizando as seção do sobre da Empresa ----------*/
+
+
+.sessao_empresa{
+    width: 100%;
+    height: 800px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+
+.container_informacao_empresa{
+    background-color: rgba(255, 255, 255, 0.863);
+    border-radius: 25px;
+    opacity: 0;
+    transform: translate3d(-200px,0,0);
+    transition: 0.8s;
+}
+
+.container_informacao_empresa.direita{
+    background-color: rgba(255, 255, 255, 0.863);
+    border-radius: 25px;
+    opacity: 0;
+    transform: translate3d(400px,0,0);
+    transition: 0.8s;
+}
+
+
+.container_informacao_empresa.move{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}  
+
+.titulo_sessao_empresa{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+    font-size: 35px;
+    color: rgb(55, 144, 63);
+    font-family: Bangers;
+    letter-spacing: 4px;
+}
+
+.descricao_sessao_empresa{
+    width: 50%;
+    height: 85%;
+    float: left;
+}
+
+.descricao_sessao_empresa.icone_sessao{
+    width: 60%;
+    height: 85%;
+    float: left;
+}
+
+.container_texto_descricao{
+    width: 90%;
+    height: 100%;
+    padding: 8px;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+.descricao_sessao_empresa.icone_sessao .container_texto_descricao{
+    padding-top: 120px;
+    box-sizing: border-box;
+}
+
+.descricao_sessao_empresa.icone_sessao .container_texto_descricao.visao{
+    padding-top: 160px;
+    box-sizing: border-box;
+}
+
+.descricao_sessao_empresa.icone_sessao .container_texto_descricao.valores{
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+.container_texto_descricao p{
+    height: 70%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    color: #0057a7;
+}
+
+.descricao_sessao_empresa.icone_sessao .container_texto_descricao p{
+    height: 70%;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #0057a7;
+}
+
+.imagem_sessao_empresa{
+    width: 50%;
+    height: 85%;
+    float: left;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.imagem_sessao_empresa.icone_sessao{
+    width: 40%;
+    height: 85%;
+    float: left;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.container_imagem_sessao_empresa{
+    width: 95%;
+    height: 90%;
+}
+
+.container_imagem_sessao_empresa img{
+    width: 690px;
+    height: 553px;
+    margin-left: 30px;
+}
+
+.icone_sessao img{
+    width: 500px;
+    height: 500px;
+    margin-left: 30px;
+}
+
+img.imagem_esquerda{
+    margin-left: 40px;
+}

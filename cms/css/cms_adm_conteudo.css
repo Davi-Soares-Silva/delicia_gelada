@@ -1,0 +1,84 @@
+.conteudo.cards_adm,
+#container_cards_adm_conteudo{
+    content: " "; 
+    display: table; 
+}
+
+.conteudo.cards_adm{
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+#container_cards_adm_conteudo{
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+    /* background-color: rgb(121, 117, 117); */
+    margin-top: 5px;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    
+}
+
+.card_adm_conteudo{
+    width: 325px;
+    height: 390px;
+    box-sizing: border-box;
+    border: solid 4px #1a3da5;
+    margin-left: 40px;
+    float: left;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.card_adm_conteudo.inferior{
+    margin-left: 200px;
+}
+
+.container_imagem_adm_card{
+    width: 100%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container_imagem_adm_card.produtos{
+    background-image: url("../imagens/produtos_img_card.png");
+}
+
+.container_imagem_adm_card.sobre{
+    background-image: url("../imagens/sobre_nos_img_card.png");
+}
+
+.container_imagem_adm_card.curiosidade{
+    background-image: url("../imagens/curiosidades_img_adm.png");
+    background-size: 62%;
+}
+
+.container_imagem_adm_card.lojas{
+    background-image: url("../imagens/nossas_lojas_img_card.png");
+}
+
+.container_imagem_adm_card.promocao{
+    background-image: url("../imagens/promocao_img_card.png");
+}
+
+.container_imagem_adm_card.produto_mes{
+    background-image: url("../imagens/produto_mes_img_card.png");
+}
+
+.container_titulo_card_adm{
+    width: 100%;
+    height: 20%;
+    background-color:  #1a3da5;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.container_titulo_card_adm h1{
+    font-family: Oswald;
+}

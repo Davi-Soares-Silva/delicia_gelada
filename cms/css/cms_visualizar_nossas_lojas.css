@@ -1,0 +1,78 @@
+#container_tbl_visualizar_lojas{
+    margin-top: 20px;
+    width: 94%;
+    min-height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow:  0 15px 25px rgba(0, 0, 0, .5);
+    height: auto;
+}
+
+.linha_tbl_lojas{
+    width: 100%;
+    height: 80px;
+    border-bottom: solid 1px rgb(53, 82, 170);
+    /* border: solid 1px black; */
+}
+.coluna_tbl_lojas{
+    padding-top: 20px;
+    box-sizing: border-box;
+    width: 14.28%;
+    height: 100%;
+    float: left;
+    /* border: solid 1px black; */
+    text-align: center;
+}
+
+.coluna_tbl_lojas span{
+    font-family: Oswald;
+    font-size: 25px;
+    color: rgb(34, 33, 33);
+}
+
+.coluna_tbl_lojas.titulo{
+    padding-top: 25px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: solid 1px #1B3DA6;
+}
+
+.coluna_tbl_lojas.titulo span{
+    font-size: 35px;
+    font-family: Oswald;
+    color: black;
+}
+
+.coluna_tbl_lojas.uf{
+    width: 10%;
+}
+
+.coluna_tbl_lojas.acoes{
+    width: 18.4%;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    /* border: solid 1px black; */
+}
+
+.coluna_tbl_lojas.acoes img{
+    width: 45px;
+    height: 45px;
+}
+
+.coluna_tbl_lojas.acoes img.excluir{
+    width: 49px;
+    height: 50px;
+}
+
+#container_frm_nossas_lojas{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(160, 39, 39);
+}
+
+.linha_frm_nossas_lojas{
+    
+}

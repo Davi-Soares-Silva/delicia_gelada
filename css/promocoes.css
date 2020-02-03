@@ -1,0 +1,192 @@
+ #caixa_cabecalho{
+    background-color: #fff;
+}
+
+body{
+    background-color: rgb(236, 157, 16);
+}
+
+#container_banner_promocoes{
+    width: 100%;
+    height: 700px;
+    background-image: url("../images/bg_descontos.jpg");;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#container_banner_promocoes .conteudo{
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+#container_texto_banner_informacoes{
+    width: 65%;
+    height: 65%;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    border-radius: 35px;
+    background-color: #ffffffb6;
+}
+
+#texto_contraste{
+    width: 1000px;
+    height: 300px;
+    background: #ffffff9d;
+}
+
+#container_texto_banner_informacoes h1{
+    font-size: 150px;
+    color: rgb(55, 144, 63);
+    font-family: Bangers, 'Bangers';
+}
+
+/* Título dos descontos */
+#container_titulo_desconto{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(55, 144, 63);
+    box-sizing: border-box;
+}
+
+#texto_titulo{
+    width: 85%;
+    height: 100%;
+    /* background-color: #3f3b3b; */
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+#texto_titulo h1{
+    font-family: Bangers, 'Bangers';
+    font-size: 85px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+#texto_titulo span{
+    color: rgb(236, 157, 16);
+}
+
+#container_imagem_titulo{
+    width: 15%;
+    height: 100%;
+    float: left;
+    /* background-color: rgb(9, 192, 91); */
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+#imagem_titulo{
+    width: 80%;
+    height: 95%;
+    /* background-color: #fff; */
+    background-image: url("../images/img_titulo_descontos.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+/* Área dos Produtos em Promoção */
+
+#container_produtos_promocoes{
+    width: 100%;
+    min-height: 1000px;
+    height: auto;
+    background-color:rgb(236, 157, 16);
+}
+
+#container_produtos_promocoes .conteudo{
+    width: 1600px;
+    min-height: inherit;
+    height: auto;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.sessao_produtos{
+    width: 100%;
+    height: 450px;
+    /* background-color: rgb(194, 136, 136); */
+}
+
+.produto_desconto{
+    width: 22%;
+    height: 100%;
+    margin-left: 40px;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    /* border: solid 1px rgb(55, 144, 63); */
+    border-radius: 20px;
+    border-top-left-radius: 0%;
+}
+
+.produto_desconto:hover{
+    transition: all 1s;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #cccccc;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.produto_imagem{
+    width: 100%;
+    height: 55%;
+    /* background-color: rgb(121, 119, 119); */
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.img_produto_desconto{
+    width: 86%;
+    height: 95%;
+    /* background-color: rgb(117, 94, 94); */
+}
+
+.img_produto_desconto img{
+    width: 304px;
+    height: 216px;
+}
+
+.produto_informacoes{
+    width: 100%;
+    height: 45%;
+    padding-left: 25px;
+    /* background-color: rgb(13, 42, 172); */
+    /* text-align: center; */
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.produto_informacoes span{
+    margin-top: 10px;
+    font-size: 35px;
+    font-family: Bangers, 'Bangers';
+    /* text-decoration: line-through; */
+}
+
+.produto_informacoes span.r{
+    color: #d40808;
+}
+
+.produto_informacoes s{
+    font-size: 35px;
+}
+
+
+.produto_informacoes h1{
+    font-family: Bangers, 'Bangers';
+    font-size: 45px;
+}
+
+#caixa_rodape{
+    background-color: rgb(55, 144, 63);
+}
+
+#caixa_rodape #caixa_conteudo_rodape{
+    box-shadow: none;
+}

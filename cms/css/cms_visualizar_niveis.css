@@ -1,0 +1,89 @@
+.coluna_tabela_usuarios.titulo.niveis{
+    width: 22%;
+    padding-top: 17px;
+
+}
+
+.coluna_tabela_usuarios.niveis{
+    width: 22%;
+}
+
+.coluna_tabela_usuarios.niveis h1{
+    font-size: 28px;
+}
+
+.coluna_tabela_usuarios.acoes_usuarios.niveis{
+    width: 4%;
+}
+
+#container_modal_excluir {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.192);
+    /* display: none; */
+}
+
+#modal_excluir.nivel {
+    margin-top: 30vh;
+    width: 610px;
+    height: 320px;
+    /* border-radius: 20px; */
+    background-color: #ffffff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+}
+
+#container_titulo_modal_excluir.nivel{
+    width: 100%;
+    height: 25%;
+    /* background-color: rgb(200, 200, 200); */
+    padding-left: 20px;
+    box-sizing: border-box;
+    /* border-bottom:1px solid #080808; */
+    padding-top: 20px;
+}
+
+#container_modal_excluir.nivel h1{
+    font-size: 39px;
+    font-family: Oswald;
+    color: #ec1212;
+}
+
+#container_conteudo_modal_excluir.nivel{
+    width: 95%;
+    height: 50%;
+    /* background-color: #464545; */
+    padding-left: 16px;
+    padding-top: 9px;
+    box-sizing: border-box;
+}
+
+#container_conteudo_modal_excluir.nivel span{
+    text-align: justify;
+    font-family: Oswald;
+    font-size: 36px;
+    color: #918c8c;
+    /* padding: 20px; */
+}
+
+#container_btn_excluir_nivel{
+    width: 100%;
+    height: 28%;
+    /* background-color: rgb(153, 146, 146); */
+    text-align: right;
+    padding-right: 20px;
+    box-sizing: border-box;
+    padding-top: 12px;
+}
+
+#container_btn_excluir_nivel a{
+    background-color: #0a0c8a;
+    padding: 15px 50px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Oswald;
+}

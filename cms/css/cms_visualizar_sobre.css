@@ -1,0 +1,341 @@
+#container_modal_sobre{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0000008a;
+    top: 0;
+    display: none;
+}
+
+#modal_sobre{
+    width: 1300px;
+    height: 800px;
+    margin-top: 5vh;
+    background-color: #fff;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+}
+
+#container_btn_fechar_modal_sobre{
+    position: absolute;
+    top: 6px;
+    left: 1240px;
+    width:50px;
+    height: 50px;
+    /* background-color: rgb(0, 0, 0); */
+    background-image: url("../imagens/fechar_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#container_titulo_modal_sobre{
+    width: 100%;
+    height: 10%;
+    /* background-color: rgb(187, 91, 91); */
+    text-align: center;
+    padding-top:5px;
+    box-sizing: border-box;
+}
+
+#container_titulo_modal_sobre h1{
+    font-family: Oswald;
+    font-size: 40px;
+
+}
+
+#container_frm_sobre{
+    width: 50%;
+    height: 90%;
+    float: left;
+    /* background-color: #266636; */
+    box-sizing: border-box;
+}
+
+#container_textos_frm_sobre{
+    width: 100%;
+    height: 100%;
+    float: left;
+    /* background-color: rgb(88, 70, 70); */
+}
+
+.linha_frm_sobre{
+    width: 100%;
+    height: 12%;
+    /* background-color: rgb(27, 30, 177); */
+    /* border: solid 1px black; */
+    box-sizing: border-box;
+}
+
+.linha_frm_sobre.descricao_sobre{
+    height: 55%;
+    padding-top: 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    /* background-color: rgb(200, 212, 26); */
+}
+
+#container_opcoes_frm_sobre{
+    width: 50%;
+    height: 90%;
+    float: left;
+    /* background-color: rgb(51, 10, 97); */
+}
+
+
+/* Estilizando a área para visualizar as sessões do sobre que já estão cadastradas */
+
+#container_tbl_sobre{
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    /* background-color: rgb(54, 38, 38); */
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+#tbl_sobre{
+    width: 65%;
+    min-height: 100px;
+    height: auto;
+    background-color: rgb(175, 117, 117);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+
+}
+
+.linha_tbl_sobre{
+    width: 100%;
+    height: 80px;
+    /* border: solid 1px black;  */
+    text-align: center;
+    border-bottom: solid 1px #144a9b;
+    /* padding: 2px; */
+    box-sizing: border-box;
+
+}
+
+.linha_tbl_sobre.titulo{
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.coluna_tbl_sobre{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    position: relative;
+    /* border: solid 1px black; */
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    box-sizing: border-box;
+    /* border-bottom: solid 1px #144a9b; */
+}
+
+.linha_frm_sobre.txt{
+    padding-top: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.linha_frm_sobre.txt input{
+    width: 600px;
+    height: 60px;
+    font-size: 35px;
+    padding-left: 20px;
+}
+
+.linha_frm_sobre.txt input:focus ~ label,
+.linha_frm_sobre.txt input:valid ~ label,
+.linha_frm_sobre.txt textarea:valid ~ label,
+.linha_frm_sobre.txt textarea:focus ~ label{
+    transition: 1s;
+    top:0px;
+    color: #144a9b;
+}
+
+.linha_frm_sobre.txt textarea{
+    width: 600px;
+    height: 350px;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.linha_frm_sobre.txt label{
+    font-size: 35px;
+    font-family: Oswald;
+    position: absolute;
+    color: rgb(114, 114, 114);
+    top: 52px;
+    left: 40px;
+    transition: 1s;
+}
+
+.linha_frm_sobre{
+    /* padding-top: 40px; */
+    box-sizing: border-box;
+}
+
+.linha_frm_sobre input{
+    width: 50px;
+    height: 40px;
+}
+
+.coluna_tbl_sobre.botoes{
+    padding-left: 70px;
+    box-sizing: border-box;
+    /* border-bottom: solid 1px #144a9b; */
+}
+
+.coluna_tbl_sobre.acoes{
+    width: 21%;
+    padding-top: 0px;
+    text-align: right;
+    border: none;
+}
+.linha_tbl_sobre.titulo .coluna_tbl_sobre{
+    padding-top: 0px;
+}
+
+.linha_tbl_sobre.titulo .coluna_tbl_sobre span{
+    font-size: 45px;
+}
+
+.coluna_tbl_sobre{
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.coluna_tbl_sobre span{
+    font-family: Oswald;
+    font-size: 30px;
+}
+
+.coluna_tbl_sobre a img{
+    width: 45px;
+    height: 45px;
+}
+
+
+.coluna_tbl_sobre a.excluir{
+    padding-top: 4px;
+    box-sizing: border-box;
+}
+
+.coluna_tbl_sobre a.excluir img{
+    width: 54px;
+    height:54px;
+}
+
+.coluna_frm_sobre{
+    width: 25%;
+    height: 60%;
+    /* border: solid 1px black; */
+    float: left;
+    padding-top: 22px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.coluna_frm_sobre.opt{
+    padding-top: 20px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+
+.coluna_frm_sobre label{
+    font-size: 25px;
+    font-family: Oswald;
+    color: rgb(114, 114, 114);
+}
+
+#titulo_coluna_frm_sobre{
+    width: 100%;
+    height: 30%;
+    /* padding-top: 10px; */
+    /* background-color: rgb(180, 36, 36); */
+    text-align: center;
+    font-size: 12px;
+    font-family: Oswald;
+}
+
+.linha_frm_sobre.rd{
+    margin-top: 30px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    /* background-color: rgb(31, 16, 16); */
+}
+
+.linha_frm_sobre.img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 30px;
+    box-sizing: border-box;
+    /* background-color: rgb(107, 25, 25); */
+}
+
+.linha_frm_sobre.img input{
+    visibility: hidden;
+}
+
+.linha_frm_sobre.img label{
+    padding: 240px 308px;
+    cursor: pointer;
+    /* background-color: rgb(182, 0, 0); */
+    /* border: black solid 1px; */
+    position: absolute;
+    /* background-image: url("../imagens/visualizar_icon.png"); */
+    top: 69px;
+    left: 10px;
+}
+
+.linha_frm_sobre.btn{
+    height: 14%;
+    margin-top: 20px;
+    padding-top: 20px;
+    /* text-align: center; */
+    padding-left: 86px;
+    box-sizing: border-box;
+    /* background-color: rgb(71, 35, 35); */
+}
+
+.linha_frm_sobre.btn input{
+    width: 490px;
+    height: 55px;
+    font-family: Oswald;
+    font-size: 25px;
+    /* border: 2px solid #144a9b; */
+}
+
+#img_sobre{
+    width: 98%;
+    height: 70%;
+    /* background-color: rgb(170, 83, 83); */
+}
+
+#img_sobre img{
+    width: 97%;
+    height: 100%;
+}
+
+#frm_foto{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(22, 122, 9); */
+}
+
+#conteudo_modal_sobre{
+    width: 100%;
+    height: 90%;
+    /* background-color: rgb(197, 7, 7); */
+}

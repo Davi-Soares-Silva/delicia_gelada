@@ -1,0 +1,533 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Estilizando o título do conteudo(Mensagens dos clientes) */
+body{
+    background-color: black;
+}
+
+#container_titulo_mensagem_adms{
+    width: 100%;
+    height: 150px;
+    /* background-color: rgb(32, 31, 31); */
+    text-align: center;
+    padding-top: 35px;
+    box-sizing: border-box;
+}
+
+#container_titulo_mensagem_adms h1{
+    color: #181616;
+    font-family: Oswald;
+    font-size: 46px;
+}
+
+/* Estilizando a lista com as mensagens dos clientes */
+#container_lista_mensagens{
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+    /* background-color: rgb(14, 36, 133); */
+    padding-bottom: 20px;
+}
+
+#lista_mensagens{
+  width: 90%;
+  min-height: 200px;
+  height: auto;
+  background-color: rgb(228, 225, 225);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+  
+}
+
+#titulo_colunas_lista{
+    width: 100%;
+    height: 50px;
+}
+
+.cabecalho_lista_mensagens{
+    width: 24%;
+    height: 100%;
+    /* background-color: rgb(31, 29, 29); */
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Oswald;
+    float: left;
+    font-size: 15px;
+}
+
+.cabecalho_lista_mensagens.tipo_mensagem{
+    width: 15%;
+}
+
+.linha_lista_mensagens{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #5990D9;
+    /* background-color: rgb(87, 87, 87) */
+}
+
+.coluna_lista_mensagens{
+    width: 24%;
+    height: 100%;
+    text-align: center;
+    /* background-color: rgb(31, 29, 29); */
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: Oswald;
+    float: left;
+    font-size: 22px;
+}
+
+.coluna_lista_mensagens.tipo_mensagem{
+    width: 15%;
+    text-align: center;
+}
+
+.coluna_lista_mensagens.acao{
+    width:5%;
+    height: 35px;
+    /* background-color: rgb(17, 16, 16); */
+    /* border: 1px solid black; */
+}
+
+.coluna_lista_mensagens.acao img{
+    width: 40px;
+    height: 40px;
+}
+
+.coluna_lista_mensagens.acao:hover{
+    cursor: pointer;
+}
+
+.coluna_lista_mensagens.visualizar a{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.coluna_lista_mensagens.excluir a{
+    width: 100%;
+    height: 100%;  
+    /* background-position: center; */
+
+}
+
+/* Estilização da Área do Modal */
+#container_modal{
+    width: 100%;
+    height: 120vh;
+    background-color: #000000e8;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    /* transition: 1s; */
+    display: none;
+}
+#modal{
+    width: 1000px;
+    height: 800px;
+    background-color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 5vh;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+}
+
+#container_fechar{
+    width: 100%;
+    height: 7%;
+    /* background-color: rgb(102, 101, 101); */
+}
+
+#container_cabecalho_fechar{
+    width: 95%;
+    height: 100%;
+    /* background-color: rgb(133, 130, 130); */
+    float: left;
+}
+
+#container_imagem_fechar{
+    width: 5%;
+    height: 100%;
+    float: left;
+}
+
+#container_imagem_fechar button{
+    width: 90%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    background-image: url("../imagens/fechar_icon.png");
+    background-position: center;
+}
+
+#container_imagem_fechar button:hover{
+    cursor: pointer;
+}
+
+#container_imagem_fechar button:focus{
+    outline: none;
+}
+
+#conteudo_modal{
+    width: 100%;
+    height:93%;
+    /* background-color: rgb(209, 206, 206); */
+    border-radius: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Estilizando o conteudo do modal com os dados que virão do banco */
+#container_cabecalho_conteudo_modal{
+    width: 100%;
+    height: 7%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    /* background-color: rgb(14, 124, 106); */
+}
+
+#container_nome_cliente{
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(167, 170, 10); */
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+#container_nome_cliente h1{
+    font-size: 27px;
+    font-family: Oswald;
+}
+
+#container_profissao_cliente{
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(67, 9, 114); */
+    float: left;
+    /* padding-left: 10px; */
+    padding-top: 19px;
+}
+
+#container_profissao_cliente h2{
+    width: max-content;
+    height: inherit;
+    font-size: 20px;
+    font-family: Oswald;
+    border-bottom: 1px solid black;
+}
+
+#container_sexo_cliente{
+    width: 20%;
+    height: 100%;
+    /* padding-top: 5px; */
+    box-sizing: border-box;
+    /* background-color: rgb(110, 15, 15); */
+    float: right;
+}
+
+#texto_sexo_cliente{
+    width: 70%;
+    height: 100%;
+    /* background-color: rgb(158, 12, 85); */
+    float: left;
+    text-align: right;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+#texto_sexo_cliente span{
+    font-size: 23px;
+    font-family: Oswald;
+}
+
+#container_imagem_sexo_cliente{
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(209, 99, 9); */
+    float: left;
+}
+
+#container_imagem_sexo_cliente img{
+    width: 62px;
+    height: 56px;
+    /* background-color: #fff; */
+}
+
+/* Estilizando a div com email do cliente */
+#container_email_cliente{
+    width: 100%;
+    height: 5%;
+    /* background-color: rgb(224, 203, 6); */
+    padding-top: 7px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+#container_email_cliente span{
+    font-family: Oswald;
+    font-size: 20px;
+}
+
+/* Estilizando o container do email na modal */
+#container_numeros_telefone_cliente{
+    width: 100%;
+    height: 15%;
+    /* background-color: #1B3DA6; */
+    padding-top: 60px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+/* Container com os números de telefone do cliente */
+#container_numeros_telefone_cliente span{
+    font-family: Oswald;
+    font-size: 19px;
+}
+
+/* Container com o tipo da mensagem do cliente */
+#container_tipo_mensagem_cliente{
+    width: 100%;
+    height: 5%;
+    /* background-color: #d1ce09; */
+    text-align: right;
+    padding-right: 30px;
+    
+    box-sizing: border-box;
+}
+
+#container_tipo_mensagem_cliente h2{
+    font-size: 26px;
+    font-family: Oswald;
+}
+
+#container_mensagem_cliente{
+    width: 100%;
+    height: 55%;
+    /* background-color: rgb(114, 13, 161); */
+    text-align: justify;
+    padding-left: 10px;
+    padding-top: 12px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+#container_mensagem_cliente span{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* Estilização do container com as págineas do cliente */
+#container_paginas_cliente{
+    width: 60%;
+    height: 15%;
+    /* background-color: rgb(207, 228, 19); */
+    float: left;
+}
+
+.container_imagem_pag_cliente{
+    width: 10%;
+    height: 40%;
+    /* background-color: #fff; */
+    float: left;
+    background-image: url("../imagens/homepage_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container_imagem_pag_cliente.facebook{
+    background-image: url("../imagens/facebook_icon.png");
+}
+
+.container_link_pag_cliente{
+    width: 90%;
+    height: 50%;
+    float: left;
+    /* background-color: rgb(54, 50, 50); */
+}
+
+.container_link_pag_cliente{
+    font-size: 18px;
+    padding-top: 10px;
+    font-family: Oswald;
+}
+
+/* Estilização do container com as ações para o administrador */
+#container_acoes_adm{
+    width: 40%;
+    height: 15%;
+    /* background-color: rgb(187, 82, 82); */
+    float: left;
+    text-align: right;
+    padding-top: 35px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+#container_acoes_adm button{
+    width: 150px;
+    height: 60px;
+    font-family: Oswald;
+    font-size: 22px;
+}
+
+#container_acoes_adm button:hover{
+    cursor: pointer;
+}
+
+#container_acoes_adm button.responder{
+    background-color: #1B3DA6;
+    color: #ececec;
+}
+
+#container_acoes_adm button.excluir{
+    background-color: #fff;
+    color: #1B3DA6;
+    border: solid 2px #1B3DA6;
+    box-sizing: border-box;
+}
+
+/* Estilizando o container de filtro*/
+#container_filtro_mensagens{
+    width: 100%;
+    height: 40px;
+    /* background-color: rgb(184, 78, 78); */
+    padding-left: 70px;
+    box-sizing: border-box;
+}
+
+#container_filtro_mensagens form{
+    width: 40%;
+    height: 100%;
+    /* background-color: #5990D9; */
+}
+
+#container_filtro_mensagens form select{
+    margin-left: 10px;
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    font-family: Oswald;
+}
+
+#container_filtro_mensagens form label{
+    font-size: 20px;
+    font-family: Oswald;
+}
+
+/* Estilizando o modal de exclusão */
+#container_modal_excluir{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.192);
+    display: none  ;
+}
+
+#modal_excluir{
+    margin-top: 30vh;
+    width: 610px;
+    height: 320px;
+    /* border-radius: 20px; */
+    background-color: #ffffff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+}
+
+#titulo_modal_excluir{
+    width: 100%;
+    height: 25%;
+    /* background-color: rgb(200, 200, 200); */
+    padding-left: 20px;
+    box-sizing: border-box;
+    /* border-bottom:1px solid #080808; */
+    padding-top: 20px;
+}
+
+#titulo_modal_excluir h1{
+    font-family: Oswald;
+    font-size: 39px;
+    color: #ff0000;
+}
+
+#container_mensagem_exclusao{
+    width: 100%;
+    height: 45%;
+    /* background-color: rgb(18, 156, 87); */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#container_mensagem_exclusao h2{
+    font-family: Oswald;
+    font-size: 32px;
+    color: #918c8c;
+}
+
+#container_mensagem_exclusao span{
+    color: #5990D9;
+}
+
+#container_botoes_modal_excluir{
+    width: 100%;
+    height: 30%;
+    /* background-color: rgb(83, 42, 197); */
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 35px;
+}
+
+#container_botoes_modal_excluir button, #container_botoes_modal_excluir a{
+    width: 110px;
+    height: 42px;
+    font-family: Oswald;
+    font-size: 19px;
+    border: none;
+    outline: none;
+}
+
+#container_botoes_modal_excluir button:hover{
+    cursor: pointer;
+}
+
+#container_botoes_modal_excluir a.cancelar{
+    background-color: #1B3DA6;
+    color: #ffffff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border: 1px solid #1B3DA6;
+
+}
+
+#container_botoes_modal_excluir a.confirmar{
+    background-color: rgb(255, 255, 255);
+    color: #1B3DA6;
+    text-decoration: none;
+    border: 1px solid #1B3DA6;
+    /* padding-left: 10px; */
+    padding: 12px 20px;
+}
+
+
+

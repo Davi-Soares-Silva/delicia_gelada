@@ -1,0 +1,536 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container_opcoes_adm_usuarios{
+    width: 90%;
+    min-height: 500px;
+    height: auto;
+    /* background-color: rgba(15, 15, 15, 0.87); */
+    padding-top: 50px;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.card_opcao_adm_usuario{
+    width: 300px;
+    height: 400px;
+    /* background-color: #ffffff; */
+    /* padding-left: 70px; */
+    box-sizing: border-box;
+    border: solid 4px #1A3DA5;
+    perspective: 1000px;
+    transition: 1s;
+    float: left;
+    margin-left: 200px;
+
+}
+
+.container_imagem_opcao_adm_usuario{
+    width: 100%;
+    height: 85%;
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url("../imagens/opcoes_adm_icon.png");
+    background-size: 70%;
+    background-position: 55px 80px;
+    background-repeat: no-repeat;
+}
+
+.container_imagem_opcao_adm_usuario.niveis{
+    background-image: url("../imagens/adm_niveis_icon.png");
+    background-size: 75%;
+    background-position: 40px 70px;
+}
+
+.container_descricao_opcao{
+    height: 16%;
+    width: 101%;
+    background-color: #1A3DA5;
+    text-align: center;
+    padding-top: 15px;
+    /* transition: 1s; */
+}
+
+.container_descricao_opcao h1{
+    font-family: Oswald;
+    font-size: 23px;
+    color: #ffffff
+}
+
+.container_gerenciar_usuarios{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    /* background-color: #1A3DA5; */
+    visibility: hidden;
+    transition: 1s;
+}
+
+.card_opcao_adm_usuario:hover .container_gerenciar_usuarios{
+    height: 30%;
+    visibility: visible;
+    transition: 1s;
+}
+
+.card_opcao_adm_usuario:hover .container_btn_acoes_adm_usuarios a{
+    opacity: 1;
+    transition: 2s;
+}
+
+.card_opcao_adm_usuario:hover .container_imagem_opcao_adm_usuario{
+    height: 70%;
+    /* background-color: #1A3DA5; */
+    background-image: url("../imagens/opcoes_adm_icon_branco.png");
+    background-size: 60%;
+    background-position: 70px 50px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card_opcao_adm_usuario:hover .container_imagem_opcao_adm_usuario.niveis{
+    height: 70%;
+    /* background-color: #1A3DA5; */
+    background-image: url("../imagens/adm_niveis_branco_icon.png");
+    background-size: 60%;
+    background-position: 60px 50px;
+    transition: 1s;
+}
+
+.card_opcao_adm_usuario:hover{
+    transition: linear 1s;
+    background-color: #1A3DA5;
+}
+
+.card_opcao_adm_usuario:hover .container_descricao_opcao{
+    visibility: hidden;
+}
+
+.container_btn_acoes_adm_usuarios a{
+    padding: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+    box-sizing: border-box;;
+    background-color: #fff;
+    margin-left: 20px;
+    border-radius: 100px;
+    box-shadow: 1px 1px 4px black;
+    opacity: 0;
+    transition: .5s;
+}
+
+.container_btn_acoes_adm_usuarios a img{
+    width: 25px;
+    height: 25px;
+}
+
+.container_btn_acoes_adm_usuarios{
+    width: 100%;
+    height: 100%;
+    /* background-color: #1A3DA5; */
+    padding-top: 40px;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+/* Estilizando o modal de inserção de usuários */
+#container_modal_adicionar_usuario{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.808);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#modal_adicionar_usuario{
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    margin-top: 10vh;
+    /* transform: translate(-50%,50%); */
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+
+}
+
+#container_fechar_add_usuario{
+    width: 100%;
+    height: 8%;
+    /* background-color: #1A3DA5; */
+    padding-right: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+#container_conteudo_fechar{
+    width: 95%;
+    height: 100%;
+    float: left;
+    /* background-color: rgb(172, 110, 110); */
+}
+
+#container_btn_fechar{
+    width: 5%;
+    height: 100%;
+    /* background-color: rgb(181, 209, 22); */
+    float: left;
+    background-image: url("../imagens/fechar_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container_btn_fechar:hover{
+    cursor: pointer;
+}
+
+#conteudo_modal_add_usuario{
+    width: 100%;
+    height: 92%;
+    /* background-color: rgb(99, 98, 100); */
+}
+
+#container_titulo_adicionar_usuario{
+    width: 100%;
+    height: 10%;
+    /* background-color: #21b8ab; */
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+#container_titulo_adicionar_usuario h1{
+    font-family: Oswald;
+    font-size: 35px;
+    color: #1A3DA5;
+}
+
+#frm_add_usuario{
+    width: 100%;
+    height: 90%;
+    /* background-color: #6d7edb; */
+    padding-top: 30px;
+    box-sizing: border-box;
+    /* position: absolute; */
+    /* transform: translate(0%, 0%); */
+}
+
+.linha_frm_add_user{
+    width: 90%;
+    height: 19%;
+    /* border: solid 1px black; */
+    margin-bottom: 15px;
+}
+
+.coluna_frm_add_user{
+    width: 50%;
+    height: 100%;
+    float: left;
+    /* border-right: solid 1px #1A3DA5; */
+    background-color: #fff;
+    box-sizing: border-box;
+    /* text-align: center; */
+    padding-top: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.coluna_frm_add_user input.dados{
+    width: 400px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 19px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background: transparent;
+}
+
+.linha_frm_add_user .coluna_frm_add_user label{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    pointer-events: none;
+    transition: .5s;
+    font-family: Oswald;
+    font-size: 25px;
+    color: rgb(174, 174, 175);
+}
+
+.coluna_frm_add_user input:focus ~ label,
+.coluna_frm_add_user input:valid ~ label{
+    top: 15px;
+    left: 20px;
+    color: #1A3DA5;
+    font-size: 19px;
+}
+
+.coluna_frm_add_user input:focus{
+    border-bottom: solid 1px #1A3DA5;
+}
+
+.coluna_frm_add_user select{
+    width: 400px;
+    height: 50px;
+    font-size: 23px;
+    font-family: Oswald;
+    color: rgb(174, 174, 175);
+    margin-top: 8px;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px black;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.coluna_sexo{
+    width: 15%;
+    height: 100%;
+    float: left;
+    text-align: right;
+    /* border: solid 1px black;
+    box-sizing: border-box; */
+}
+
+.coluna_sexo.titulo{
+    width: 30%;
+    padding-top: 5px;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.coluna_sexo input{
+    width: 100px;
+    height: 29px;
+    margin-top: 10px;
+}
+
+.coluna_sexo span{
+    font-family: Oswald;
+    color: rgb(174, 174, 175);
+    font-size: 23px;
+    margin-top: 0px;  
+}
+
+.coluna_frm_add_user.btn_adicionar input{
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    font-family: Oswald;
+    background-color: #1A3DA5;
+    color: #ffffff;
+}
+
+.coluna_frm_add_user.btn_adicionar{
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.coluna_frm_add_user.btn_adicionar input:hover{
+    cursor: pointer;
+}
+
+
+/* Estilização do modal para atualizar ou editar níveis */
+#container_modal_niveis{
+    width: 100%;
+    height: 100%;
+    background-color: #00000093;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: none;
+}
+
+#modal_nivel_usuario{
+    width: 1000px;
+    height: 700px;
+    margin-top: 5vh;
+    background-color: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+}
+
+#container_fechar_modal_nivel{
+    width: 100%;
+    height: 8%;
+    padding-top: 3px;
+    padding-right: 6px;
+    box-sizing: border-box;
+}
+
+#conteudo_fechar_modal_nivel{
+    width: 95%;
+    height: 100%;
+    float: left;
+}
+
+#container_btn_fechar_modal_nivel{
+    width: 5%;
+    height: 100%;
+    float: left;
+    background-image: url("../imagens/fechar_icon.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#container_btn_fechar_modal_nivel:hover{
+    cursor: pointer;
+}
+
+#container_conteudo_modal_nivel{
+    width: 100%;
+    height: 92%;
+    /* background-color: rgb(51, 44, 44); */
+}
+
+#container_titulo_modal_nivel{
+    width: 100%;
+    height: 13%;
+    /* background-color: #c57d1f; */
+    text-align: center;
+}
+
+#container_titulo_modal_nivel h1{
+    font-size: 52px;
+    font-family: Oswald;
+    color: #1A3DA5;
+}
+
+#frm_nivel_usuario{
+    width: 100%;
+    height: 87%;
+    /* background-color: #fff; */
+}
+
+.linha_frm_nivel_usuario{
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(155, 155, 155); */
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.linha_frm_nivel_usuario.nome{
+    padding-top: 40px;
+}
+
+.linha_frm_nivel_usuario.nome input{
+    
+    width: 400px;
+    height: 60px;
+    padding-left: 10px;
+    /* padding-bottom: 2px; */
+    font-size: 22px;
+    box-sizing: border-box;
+}
+
+.linha_frm_nivel_usuario label.nome_nivel{
+    font-size: 30px;
+    position: absolute;
+    top: 45px;
+    left: 415px;
+    pointer-events: none;
+    transition: .5s;
+    font-family: Oswald;
+    /* font-size: 25px; */
+    color: rgb(174, 174, 175);
+}
+
+.linha_frm_nivel_usuario input:focus ~ label.nome_nivel,
+.linha_frm_nivel_usuario input:valid ~ label.nome_nivel{
+    color: #1A3DA5;
+    top: -5px;
+}
+
+.linha_frm_nivel_usuario.subtitulo{
+    padding-top: 50px;
+    font-family: Oswald;
+    font-size: 17px;
+}
+
+.linha_frm_nivel_usuario.subtitulo h1{
+    color: #464343;
+}
+
+.coluna_frm_nivel_usuario{
+    width: 20%;
+    height: 100%;
+    float: left;
+    /* border: solid 1px black; */
+    box-sizing: border-box;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+.coluna_frm_nivel_usuario.opt{
+    width: 13%;
+    text-align: left;
+}
+
+.coluna_frm_nivel_usuario h2{
+    font-family: Oswald;
+    font-size: 27px;
+    color: rgb(174, 174, 175);
+}
+
+.coluna_frm_nivel_usuario.opt input{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+}
+
+.coluna_frm_nivel_usuario.opt input:checked{
+    background-color: #1A3DA5;
+}
+
+.coluna_frm_nivel_usuario.opt input:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 0;
+    transform: scale(1.1);
+    transition: .5s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    left: 0;
+    background: #ffffff;
+}
+
+.coluna_frm_nivel_usuario.opt input:checked:before{
+    left: 40px;
+}
+
+.linha_frm_nivel_usuario.btn_adicionar_nivel input{
+    width: 400px;
+    height: 70px;
+    background-color: #1A3DA5;
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    border: solid 2px #ffffff;
+    box-sizing: border-box;
+}
+
+.linha_frm_nivel_usuario.btn_adicionar_nivel input:hover{
+    cursor: pointer;
+}

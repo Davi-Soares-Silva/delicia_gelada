@@ -1,0 +1,267 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+/* Padronizando elementos do site */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.titulo_opcao_gerenciamento a.bloqueado{
+    color: #aeaeaf;
+}
+
+.titulo_opcao_gerenciamento a.bloqueado:hover{
+    cursor: not-allowed;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.conteudo{
+    width: 1400px;
+    height: inherit;
+    background-color: rgb(255, 255, 255);
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Área do cabeçalho do cms */
+#container_cabecalho_cms{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;  
+    /* background-color: rgb(182, 96, 96); */
+}
+
+#container_cabecalho_cms .conteudo{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#container_titulo_cabecalho_cms{
+    width: 70%;
+    height: 100%;
+    float: left;
+    padding-left: 250px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: #1B3DA6;
+    /* background-color: rgb(117, 88, 88); */
+}
+
+#container_titulo_cabecalho_cms h1{
+    font-size: 55px;
+    font-family: Oswald; 
+}
+
+#container_titulo_cabecalho_cms span{
+    font-size: 45px;
+}
+
+#container_imagem_cabecalho_cms{
+    width: 30%;
+    height: 80%;
+    float: left;
+    padding-top: 30px;
+    box-sizing: border-box;
+    /* background-color: rgb(12, 160, 32); */
+}
+
+#imagem_cabecalho_cms{
+    width: 50%;
+    height: 90%;
+    /* background-color: rgb(102, 71, 71); */
+    background-image: url("../imagens/cms_icon.png");
+}
+
+/* Estilização da área de opções de gerenciamento oara o usuário */
+
+#container_opcoes_gerenciamento{
+    width: 100%;
+    height: 150px;
+    /* background-color: rgb(7, 17, 165); */
+}
+
+.imagem_opcao_gerenciamento{
+    width: 50%;
+    height: 70%;
+    background-color: #fff;
+}
+
+.imagem_opcao_gerenciamento.adm_conteudo.bloqueado{
+    background-image: url("../imagens//adm_conteudo_icon_bloqueado.png");
+    cursor: not-allowed;
+}
+
+.imagem_opcao_gerenciamento.imagem_opcao_gerenciamento.adm_fale_conosco.bloqueado{
+    background-image: url("../imagens/fale_conosco_icon_bloqueado.png");
+    cursor: not-allowed;
+}
+
+.imagem_opcao_gerenciamento.adm_usuarios.bloqueado{
+    background-image: url("../imagens/adm_users_icon_bloqueado.png");
+    cursor: not-allowed;
+}
+
+
+
+.imagem_opcao_gerenciamento.adm_conteudo{
+    background-image: url("../imagens/adm_conteudo_icon.png");
+    background-position: center;
+}
+
+.imagem_opcao_gerenciamento.adm_fale_conosco{
+    background-image: url("../imagens/fale_conosco_icon.png");
+    background-position: center;
+}
+
+.imagem_opcao_gerenciamento.adm_usuarios{
+    background-image: url("../imagens/adm_users_icon.png");
+    background-position: center;
+}
+
+.titulo_opcao_gerenciamento{
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(69, 180, 59); */
+    margin-top: 2px;
+    text-align: center;
+}
+
+.titulo_opcao_gerenciamento a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-family: Oswald;
+}
+
+#container_adm_conteudo{
+    padding-top: 10px;
+    box-sizing: border-box;
+    width: 23%;
+    height: 100%;
+    /* background-color: rgb(15, 182, 160); */
+    float: left;
+}
+
+#container_adm_fale_conosco{
+    padding-top: 10px;
+    box-sizing: border-box;
+    width: 23%;
+    height: 100%;
+    /* background-color: rgb(206, 90, 12); */
+    float: left;
+}
+
+#container_adm_usuarios{
+    padding-top: 10px;
+    box-sizing: border-box;
+    width: 17%;
+    height: 100%;
+    /* background-color: rgb(148, 26, 97); */
+    float: right;
+}
+
+#container_informacoes_usuario{
+    width: 27%;
+    height: 100%;
+    padding: 15px;
+    padding-right: 35px;
+    box-sizing: border-box;
+    /* background-color: rgb(6, 53, 85); */
+    float: right;
+
+}
+
+#container_nome_usuario{
+    width: 100%;
+    height: 80%;
+    /* background-color: rgb(52, 3, 71); */
+    text-align: center;
+}
+
+#container_nome_usuario span{
+    font-size: 30px;
+    font-family: Oswald;
+    text-align: center;
+}
+
+#container_logout{
+    width: 100%;
+    height: 20%;
+    text-align: right;
+    /* background-color: rgb(35, 173, 35); */
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+#container_logout a{
+    font-size: 25px;
+    text-decoration: none;
+    font-family: Oswald;
+    color: #5890D8;
+}
+
+/* Estilização da área de conteudo administrado pelo CMS */
+#container_conteudo_cms{
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+}
+
+#container_conteudo_cms .conteudo{
+    border-top: 2px solid #1B3DA6;
+    box-sizing: border-box;
+    min-height: inherit;
+    height: auto;
+    padding-bottom: 70px;
+    background-color: #fff;
+}
+
+
+
+.conteudo.home{
+    text-align: center;
+    padding-top: 200px;
+    box-sizing: border-box;
+    font-size: 50px;
+    color: #1B3DA6;
+    font-family: Oswald;
+}
+
+
+/* Estilização do rodapé do CMS */
+#container_rodape_cms{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    /* background-color: rgb(226, 3, 3); */
+}
+
+#container_rodape_cms .conteudo{
+    border-top: 2px solid #1B3DA6;
+    box-sizing: border-box;
+    padding-top: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#container_rodape_cms h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: Oswald;
+    color: #5890D8;
+}

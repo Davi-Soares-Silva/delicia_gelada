@@ -1,0 +1,144 @@
+
+#caixa_cabecalho nav{
+    box-shadow: none;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+#container_titulo_produto_mes{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(236, 157, 16);
+    margin-bottom: 100px;
+}
+
+#texto_titulo_destaque{
+    width: 75%;
+    height: 100%;
+    float: left;
+    padding-left: 250px;
+    letter-spacing: 2px;
+    font-family: Bangers, 'Bangers';
+    font-size: 45px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+#container_titulo_imagem_produto_destaque{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+#imagem_titulo_produto_destaque{
+    width: 60%;
+    height: 100%;
+    background-image: url("../images/img_titulo_destaque.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+/*Estilizando a Área do produto do mês */
+
+#container_produto_mes{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+#container_produto_mes .conteudo{
+    background-color: #fff;
+}
+
+#container_imagem_produto_destaque{
+    width: 40%;
+    height: 100%;
+    float: left;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+#imagem_produto_destaque{
+    width: 95%;
+    height: 95%;
+    background-color: #fff;
+    background-image: url("../images/img_produto_destaque.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#titulo_nome_produto_destaque{
+    width: 60%;
+    height: 15%;
+    float: left;
+    color: #193097;
+    padding-top: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Bangers, 'Bangers';
+    font-size: 30px;
+}
+
+#texto_produto_destaque{
+    width: 60%;
+    height: 70%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: 24px;
+}
+
+#informacoes_produto_destaque{
+    width: 60%;
+    height: 15%;
+    float: left;
+}
+
+.informacao_produto_destaque{
+    width: 33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: Bangers, 'Bangers';
+}
+
+.informacao_produto_destaque.btn{
+    width: 67%;
+    float: left;
+    text-align: right;
+}
+
+.informacao_produto_destaque h1{
+    font-size: 44px;
+    color: rgb(236, 157, 16);
+}
+
+.informacao_produto_destaque button{
+    width: 120px;
+    height: 60px;
+    font-family: Bangers, 'Bangers';
+    font-size: 25px;
+    margin-right: 10px;
+    color: #193097;
+}
+
+.informacao_produto_destaque button:hover{
+    cursor: pointer;
+}
+
+
+
+#caixa_rodape{
+    background-color: rgb(55, 144, 63);
+}
+
+#caixa_rodape #caixa_conteudo_rodape{
+    box-shadow: none;
+}

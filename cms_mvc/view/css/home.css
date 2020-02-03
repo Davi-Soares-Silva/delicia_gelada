@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+body{
+    background-color: #000000;
+}
+
+
+
+/* Estilizando a div que era o menu anterior e deixando só um título */
+.produtos{
+    width: 72% !important;
+    padding-top: 0px !important;
+    /* background-color: rgb(190, 126, 126); */
+    box-sizing: border-box;
+}
+
+#container_titulo_home{
+    width: 80%;
+    height: 100%;
+    text-align: right;
+    padding-right: 30px;
+    /* background-color: rgb(17, 70, 184); */
+    float: left;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+#container_imagem_home{
+    width: 20%;
+    height: 100%;
+    padding-top: 20px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    float: left;
+}
+
+#container_imagem_home img{
+    width: 110px;
+    height: 110px;
+}
+
+.produtos h1{
+    font-size: 50px;
+    font-family: Oswald;
+    color: #5d5b5b;
+}
+
+
+/* Estilizando os cards com opções da home */
+#container_card_administracao_home{
+    /* width: 100%; */
+    /* padding: 30px; */
+    padding-top: 70px;
+    padding-left: 130px;
+    box-sizing: border-box;
+    min-height: 500px;
+    background-color: rgb(63, 39, 39);
+    height: auto;
+    /* background-color: #a39191; */
+}
+
+.card_adm_produto_home{
+    width: 25%;
+    height: 450px;
+    background-color: #1B3DA6;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: solid 5px #1B3DA6;
+    box-sizing: border-box;
+    float: left;
+}
+
+.container_img_card_home{
+    width: 100%;
+    height: 80%;
+    /* background-color: #a39191; */
+}
+
+.container_img_card_home{
+    background-size: 80%;
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.produtos_home{
+    background-image: url("../../../cms/imagens/produtos_img_card.png");
+}
+
+.categorias_home{
+    background-image: url("../images/categorias_icon.png");
+}
+
+.sub_categorias_home{
+    background-image: url("../images/sub_categorias_icon.png");
+}
+
+.container_titulo_card_home{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding-top: 23px;
+    box-sizing: border-box;
+    background-color: #1B3DA6;
+}
+
+.container_titulo_card_home h1{
+    color: #ffffff;
+    font-family: Oswald;
+}
+
+/* Estilizando o formulário de produtos */
+.container_titulo{
+    width: 100%;
+    height: 100px;
+    /* background-color: #5a5555; */
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container_titulo h1{
+    font-family: Oswald;
+    font-size: 47px;
+}
+
+#container_frm_produtos{
+    width: 70%;
+    height: 400px;
+    border: solid 1px black;
+    box-sizing: border-box;
+}
+
+.container_tabela{
+    margin-top: 100px;
+    width: 75%;
+    min-height: 300px;
+    height: auto;
+    background-color: #1B3DA6;
+}
+
+
+.linha_tbl{
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    border: solid 1px black;
+}
+
+.linha_tbl.titulo{
+    height: 100px;
+}
+
+.coluna_tbl{
+    width: 25%;
+    height: 100%;
+    border: solid 1px black;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.coluna_tbl span{
+    font-size: 32px ;
+    font-family: Oswald;
+}
+
+.coluna_tbl.acao{
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.coluna_acao{
+    width: 28.33%;
+    height: 100%;
+    /* border: solid 1px black; */
+    float: left;
+    box-sizing: border-box;
+}
+
+
+.coluna_tbl img.excluir{
+    width: 55px;
+    height: 55px;
+}
+
+.coluna_tbl.imagem{
+    padding-top: 10px;
+}
+
+.coluna_tbl.imagem img{
+    width: 150px;
+    height: 100px;
+}
+
+.coluna_tbl img{
+    width: 50px;
+    height: 50px;
+}
+
+.linha_tbl.titulo .coluna_tbl{
+    padding-top: 20px;
+}
+
+.linha_tbl.titulo .coluna_tbl h1{
+    font-size: 32px;
+    font-family: Oswald;   
+}
+
+.imagem_opcao_gerenciamento.adm_conteudo{
+    background-image: url("../images/categorias_icon.png");
+    background-position: center;
+}
+
+.imagem_opcao_gerenciamento.adm_fale_conosco{
+    background-image: url("../images/sub_categorias_icon.png");
+    background-position: center;
+}
+
+.imagem_opcao_gerenciamento.adm_usuarios{
+    background-image: url("../images/produto_icon_home.png");
+    background-position: center;
+}
+
+.container_tabela.categorias{
+    width: 50%;
+}
+
+
+.container_tabela.categorias .linha_tbl .coluna_tbl.imagem{
+    width: 65%;
+}
+
+.container_tabela.categorias .linha_tbl .coluna_tbl.acao{
+    width: 35%;
+}
+
+.container_tabela.categorias .linha_tbl .coluna_tbl.categorias{
+    width: 32.3%;
+}
+

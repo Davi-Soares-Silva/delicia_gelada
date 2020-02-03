@@ -1,0 +1,233 @@
+
+
+body{
+    background-image: url("../images/bg_contatos.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundo_branco{
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+#caixa_cabecalho.fundo_branco #area_menu{
+    box-shadow: none;
+}
+
+/* Estilizando o formulário de contato */
+
+#container_formulario_contato{
+    margin-top: 30px;
+    width: 100%;
+    height: 800px;
+}
+
+#container_formulario_contato .conteudo{
+    width: 1400px;
+    margin-top: 100px;
+}
+
+#frm_contato{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#container_informacoes_frm_contato{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+#container_mensagem_frm_contato{
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.linha_frm_contato{
+    width: 100%;
+    height: 12.5%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+/* Estilizando a parte de inserção dos dados do usuário */
+
+.container_img_frm_contato{
+    width: 50px;
+    height: 50px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.container_img_frm_contato img{
+    width: 90%;
+    height: 90%;
+}
+
+.linha_frm_contato input{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+
+.linha_frm_contato.sexo{
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.linha_frm_contato.sexo input{
+    width: 100px;
+    height: 35px;
+    margin-right: -20px;
+}
+
+.coluna_sexo label{
+    margin-top: -5px;
+    font-size: 35px;
+    font-family: Bangers;
+    color: rgb(255, 255, 255);
+}
+
+.coluna_sexo{
+    width: 35%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 31px;
+    padding-left: 10px;
+}
+
+.coluna_sexo.rd{
+    padding-left: 20px;
+    width: 15%;
+    padding-top: 30px;
+}
+
+#titulo_mensagem_frm_contato{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+#titulo_mensagem_frm_contato h1{
+    font-size: 55px;
+    font-family: Bangers;
+    letter-spacing: 2px;
+    color: rgb(236, 157, 16);
+}
+
+#tipo_mensagem_frm_contato{
+    width: 100%;
+    height: 10%;
+}
+
+.coluna_tipo_mensagem{
+    width: 30%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 17px;
+    padding-left: 10px;
+}
+
+.coluna_tipo_mensagem label{
+    font-size: 35px;
+    font-family: Bangers;
+    color: rgb(255, 255, 255);
+}
+
+.coluna_tipo_mensagem.rd{
+    width: 20%;
+    padding-top: 16px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.coluna_tipo_mensagem.rd input{
+    width: 35px;
+    height: 35px;
+}
+
+#mensagem_frm_contato{
+    width: 100%;
+    height: 65%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+#mensagem_frm_contato textarea{
+    width: 780px;
+    height: 500px;
+    resize: none;
+    font-size: 25px;
+}
+
+#container_btn_enviar_frm_contato{
+    width: 100%;
+    height: 15%;
+    padding-top: 45px;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+#container_btn_enviar_frm_contato input{
+    width: 789px;
+    height: 50px;
+    font-family: Bangers;
+    font-size: 34px;
+    color: rgb(0, 0, 0);
+}
+
+/* Área de alterações no rodapé */
+
+#caixa_rodape{
+    background-color: rgb(55, 144, 63);
+}
+
+#caixa_rodape #caixa_conteudo_rodape{
+    box-shadow: none;
+}
+
+label.error{
+    color: rgb(236, 157, 16);
+    font-size: 22.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linha_frm_contato input.error{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border: 3px solid rgb(236, 157, 16);
+    transition: all .3s;
+}
+
+#mensagem_frm_contato textarea.error{
+    box-sizing: border-box;
+    border: 3px solid rgb(236, 157, 16);
+    transition: all .3s;
+}
+
+.linha_frm_contato input.error:focus{
+    outline: 0;
+}

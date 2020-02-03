@@ -1,0 +1,808 @@
+/*---------- Padronizando Elementos no Site ----------*/
+
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+input:focus{
+    border-color: none;
+    outline: 0;
+}
+
+@font-face{
+    font-family: Bangers;
+    src: url("./fonts/Bangers.ttf");
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    height: inherit;
+    width: inherit;
+    font-family: inherit;
+}
+
+.transition{
+    transition: all 2s;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto
+}
+
+.conteudo{
+    width: 1600px;
+    height: 100%;
+}
+
+body{
+    background: rgb(241, 241, 241);
+}
+
+.bordas{
+    border-left: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    box-sizing: border-box;
+}
+
+
+img{
+    width: 366px;
+    height: 218px;
+
+}
+
+/*------------- Área do Cabeçalho --------------------*/
+
+#caixa_cabecalho{
+    width: 100%;
+    height: 130px;
+}
+
+#caixa_cabecalho.fixo{
+    width: 100%;
+    height: 140px;
+    transition: all 2s;
+    position: fixed;
+    z-index: 999;
+}
+
+#area_menu{
+    background-color: #ffffff;
+    box-shadow: 1px 1px 4px #cccccc;
+    box-sizing: border-box;
+    height: 130px;
+    
+}
+
+#caixa_cabecalho.fixo #area_menu{
+    background-color: #ffffff;
+    box-shadow: 1px 1px 4px #cccccc;
+    box-sizing: border-box;
+    height: 140px;
+    transition: all 2s;
+}
+
+
+/*--------------------- Logo -------------------------*/
+
+#nav_container_logo{
+    width: 16%;
+    height: 100%;
+    float: left;
+}
+
+#nav_logo{
+    width: 70%;
+    height: 100%;
+    background-image: url("../images/delicia_gelada_logo.png");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+#nav_logo.fixo{
+    width: 70%;
+    height: 100%;
+    background-image: url("../images/delicia_gelada_logo.png");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 1s;
+}
+
+
+
+/*--------------- Área do Menu ----------------------*/
+
+#nav_container_menu{
+    width: 44%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 38px;
+}
+
+#menu{
+    width: 675px;
+    height: 55px;
+}
+
+.menu_item{
+    width: 115px;
+    height: inherit;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 16px;
+    margin-right: 9px;
+    box-sizing: border-box;
+    font-family: Bangers, 'Bangers';
+    font-size: 23px;
+    color: rgb(55, 144, 63);
+}
+
+.menu_item.fixo{
+    width: 115px;
+    height: inherit;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 26px;
+    margin-right: 9px;
+    box-sizing: border-box;
+    font-family: Bangers, 'Bangers';
+    font-size: 23px;
+    color: rgb(55, 144, 63);
+    transition: all 1s;
+}
+
+#menu_item_onde_comprar{
+    width: 143px;
+}
+
+#menu_item_produto_mes{
+    width: 140px;
+}
+
+.menu_item:hover{
+    cursor: pointer;
+    border-bottom: 2px solid rgb(55, 144, 63);
+    box-sizing: border-box;
+}
+
+.menu_item:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.submenu{
+    min-width: 345px;
+    height: 50px;
+    width: auto;
+    margin-left: -40px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.submenu_item{
+    width: 115;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    color: rgb(236, 157, 16);
+    background-color: inherit;
+    float: left;
+    font-family: Bangers, 'Bangers';
+}
+
+.submenu_item:hover{
+    color: rgb(197, 129, 13);
+    transition: 0.5s;
+}
+
+
+
+/*---------- Área do Formulário no Cabeçalho --------------*/
+
+#nav_container_frm{
+    width: 40%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+#frm_login{
+    width: 550px;
+    height: 100%;
+}
+
+#container_informacoes_frm_login{
+    width: 80%;
+    height: 100%;
+    float: left;
+    
+}
+
+.linha_frm_login{
+    width: 50%;
+    height: 100%;
+    padding-left: 5px;
+    float: left;
+    text-align: left;
+    padding-top: 10px;
+    font-size: 23px;
+    box-sizing: border-box;
+    color: rgb(236, 157, 16);
+}
+
+
+
+.linha_frm_login.fixo{
+    width: 50%;
+    height: 100%;
+    padding-left: 5px;
+    float: left;
+    text-align: left;
+    padding-top: 20px;
+    font-size: 23px;
+    box-sizing: border-box;
+    color: rgb(236, 157, 16);
+    transition: all 1s;
+}
+
+.linha_frm_login label{
+    font-family: Bangers, 'Bangers';
+}
+
+.linha_frm_login input{
+    width: 200px;
+    height: 50px;
+    margin-top: 5px;
+    border: 2px solid rgb(236, 157, 16);
+}
+
+.linha_frm_login input:focus{
+    width: 210px;
+    transition: 1s;
+}
+
+#container_btn_frm_login{
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding-top: 40px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+#container_btn_frm_login.fixo{
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding-top: 50px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+#container_btn_frm_login input{
+    width: 90px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 2px solid rgb(236, 157, 16);
+    color: rgb(236, 157, 16);
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Bangers, 'Bangers';
+}
+
+#container_btn_frm_login input:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgb(236, 157, 16);
+}
+
+
+
+
+
+/*-------------------- Área do Slider ---------------------*/
+
+#conteudo_slide{
+    width: 100%;
+    height: 680px;
+}
+
+#conteudo_slide .conteudo{
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+}
+
+
+
+
+/*-------------- Área do Conteúdo do Site -----------------*/
+
+#caixa_teste{
+    width: 1600px;
+    height: 500px;
+    position: absolute;
+    z-index: -10;
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+
+#container_redes_sociais{
+    width: 100%;
+    height: 100%;
+    margin-top: -300px;
+    position: fixed;
+    display: flex;
+}
+
+#caixa_conteudo_redes_sociais{
+    width: 1600px;
+    height: 500px;
+}
+
+#redes_sociais{
+    width: 80px;
+    height: 375px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+#redes_sociais.visible{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.logo_rede_social{
+    width: 100%;
+    height: 15%;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.logo_rede_social img{
+    width: 60px;
+    height: 60px;
+}
+
+
+#container_conteudo{
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+}
+
+#container_conteudo .conteudo{
+    min-height: 400px;
+    height: auto;
+    width: 1600px;
+    box-shadow: 1px 1px 4px #bbbaba;
+}
+
+
+
+#caixa_conteudo{
+    width:100%;
+    min-height:800px;
+    height: auto;
+    display: flex;
+    background-color: #fff;
+}
+
+
+
+
+
+
+/*------------- Área do Menu de Categorias -----------------*/
+
+#caixa_area_menu_categorias{
+    width: 15%;
+    min-height: 800px;
+    height: auto;
+    box-shadow: 1px 1px 4px #cccccc;
+    box-sizing: border-box;
+}
+
+#container_menu_categorias{
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+}
+
+#caixa_menu_categorias{
+    float: left;
+    min-height: 500px;
+    height: auto;
+    border-left: none;
+    border-bottom: none;
+}
+
+
+.menu_categoria_item{
+    width: 240px;
+    background-color: #ffffff;
+}
+
+.menu_categoria_item:hover{
+    cursor: pointer;
+}
+
+.menu_categoria_item a{
+    display: block;
+    padding: 8px;
+    height: inherit;
+    border-left: 4px solid rgb(55, 144, 63);
+    text-decoration: none;
+    box-shadow: 2px none 2px #cccccc;
+    color: #555555;
+    font-family: Bangers, 'Bangers';
+    font-size: 23px;
+    color: rgb(55, 144, 63);
+    border-bottom: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+
+.menu_categoria_item a:hover{
+    border-left: 4px solid rgb(42, 105, 47);
+    background-color: #f8f8f8;
+}
+
+.submenu_categoria{
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -131px;
+}
+
+.submenu_categoria_move{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+    transition: 1s;
+}
+
+.submenu_categoria_move .submenu_categoria_item{
+    background-color: #ffffff;
+}
+
+.submenu_categoria_move .submenu_categoria_item a{
+    color: rgb(236, 157, 16);
+    font-family: Bangers, 'Bangers';
+    font-size: 18px;
+}
+
+
+.submenu_categoria_move .submenu_categoria_item a:hover{
+    background-color: #f3f3f3;
+    border-left: 4px solid rgb(236, 157, 16);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*------------------ Área dos Produtos ----------------------*/
+
+#caixa_produtos{
+    width: 85%;
+    min-height: 800px;
+    height: auto;
+    padding-top: 100px;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+#container_produtos{
+    width: 95%;
+    min-height: 800px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+#container_sessao_produtos{
+    width: 100%;
+    min-height: 450px;
+    height: auto;
+
+}
+
+#container_sessao_produto:before,
+#container_sessao_produto:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.sessao_produtos{
+    display: flex;
+    width: 100%;
+    min-height: 350px;
+    height: auto;
+    margin-bottom: 35px;
+}
+
+
+.produto{
+    width: 32%;
+    min-height: 100px;
+    height: auto;
+    background-color: rgb(255, 249, 249);
+    margin-left: 16px;
+    border: solid 4px rgb(55, 144, 63);
+    box-sizing: border-box;
+    float: left;
+    perspective: 1000px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.container_imagem_produto{
+    width: 100%;
+    height: 250px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.imagem_produto{
+    width: 95%;
+    height: 95%;
+    background-color: #fff;
+}
+
+.container_informacoes_produto{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+}
+
+.linha_informacao_produto{
+    width: 100%;
+    min-height: 45px;;
+    height: auto;
+    background-color: rgb(255, 249, 249);
+    box-sizing: border-box;
+    color:rgb(0, 0, 0);
+
+}
+
+.produto_nome{
+    width: 100%;
+    min-height: 45px;
+    height: auto;
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.produto_nome span{
+    font-family: Bangers, 'Bangers';
+    font-size: 36px;
+    color: rgb(55, 144, 63);
+}
+
+.produto_preco{
+    width: 100%;
+    min-height: 40px;
+    height: auto;
+    text-align: center;
+}
+
+.produto_preco h1{
+    font-family: Bangers, 'Bangers';
+    font-size: 30px;
+    color: rgb(71, 73, 71);
+}
+
+.produto_descricao{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 144, 62, 0.986);
+    padding: 8px;
+    border: 4px solid #ffffff;
+    box-sizing: border-box;
+    visibility: hidden;
+    top: -400px;
+    opacity: 0;
+    text-align: center;
+    overflow: auto;
+}
+
+
+
+.produto_descricao span{
+    font-family: Bangers, 'Bangers';
+    font-size: 25px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.produto:hover .produto_descricao{
+    visibility: visible;
+    top: 0;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.container_btn_detalhes_produto{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding-top: 55px;
+    box-sizing: border-box;
+}
+
+.container_btn_detalhes_produto button{
+    width: 110px;
+    height: 60px;
+    background-color: rgb(55, 144, 63);
+    font-family: Bangers, 'Bangers';
+    font-size: 20px;
+    border: solid 4px #ffffff;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+
+}
+
+.container_btn_detalhes_produto button:hover{
+    background-color: #ffffff;
+    color: rgb(55, 144, 63);
+    cursor: pointer;
+}
+
+
+/*-------------------- Área do Rodapé ------------------------*/
+
+#caixa_rodape{
+    width: 100%;
+    height: 150px;
+    position: sticky;
+    top: 1099px;
+
+}
+
+
+#caixa_rodape.rodape_empresa{
+    background-color: rgb(55, 144, 63);
+}
+
+
+
+#caixa_conteudo_rodape{
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 4px #cccccc;
+    background-color: rgb(55, 144, 63);
+}
+
+#caixa_conteudo_rodape_empresa{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(55, 144, 63);
+    border: none;
+}
+
+#container_btn_sistema_interno{
+    width: 15%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 45px;
+    box-sizing: border-box;
+}
+
+#container_btn_sistema_interno input{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(55, 144, 63);
+    font-family: Bangers, 'Bangers';
+    color: #ffffff;
+    font-size: 22px;
+    border: solid 4px #ffffff;
+}
+
+#container_btn_sistema_interno input:hover{
+    background-color: #fff;
+    border: solid 4px #ffffff;
+    color: rgb(55, 144, 63);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#container_endereco{
+    width: 65%;
+    height: 100%;
+    float: left;
+    padding-top: 26px;
+    box-sizing: border-box;
+}
+
+#endereco{
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+#endereco h1{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: Bangers, 'Bangers';
+    letter-spacing: 2px;
+}
+
+#container_download_app{
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: flex;
+}
+
+#container_imagem_app{
+    width: 50%;
+    height: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+#imagem_app{
+    width: 80%;
+    height: 80%;
+    background-image: url("../images/icone_app.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#container_btn_app{
+    width: 50%;
+    height: 100%;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+#container_btn_app input{
+    width: 140px;
+    height: 70px;
+    margin-left: -20px;
+    font-size: 22px;
+    background-color: rgb(55, 144, 63);
+    font-family: Bangers, 'Bangers';
+    border: solid 4px #ffffff;
+    color: #ffffff;
+}
+
+#container_btn_app input:hover{
+    background-color: #fff;
+    border: solid 4px #ffffff;
+    color: rgb(55, 144, 63);
+    transition: all 1s;
+    cursor: pointer;
+}
